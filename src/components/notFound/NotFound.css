@@ -1,0 +1,9 @@
+.content-404 {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 86px);
+}
+
+.content-404 h1 {
+  font-size: 6vw;
+}

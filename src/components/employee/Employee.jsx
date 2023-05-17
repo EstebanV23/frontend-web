@@ -2,6 +2,7 @@ import useGetData from '../../hooks/useGetData'
 import Loader from '../loader/Loader'
 import GroupOpenModal from '../groupOpenModal/GroupOpenModal'
 import serviceGetAllEmployees from '../../services/serviceGetAllEmployees'
+import FormNewEmployee from '../formNewEmployee/FormNewEmployee'
 
 export default function Employee () {
   const { data, loading } = useGetData(serviceGetAllEmployees)
@@ -27,7 +28,7 @@ export default function Employee () {
         </tbody>
       </table>
       <GroupOpenModal textButton='Add new Employee' textSucces='New employee'>
-        <h1>Hola</h1>
+        <FormNewEmployee />
       </GroupOpenModal>
     </div>
   )

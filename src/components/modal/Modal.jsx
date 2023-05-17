@@ -13,7 +13,6 @@ export default function Modal ({ children, id, textSuccess, title }) {
           </div>
           <div className='modal-footer'>
             <button type='button' className='btn btn-outline-danger' data-bs-dismiss='modal'>Close</button>
-            <button type='button' className='btn btn-outline-success'>{textSuccess}</button>
           </div>
         </div>
       </div>

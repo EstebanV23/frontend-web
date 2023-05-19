@@ -1,7 +1,7 @@
 import { URL_BACKEND } from '../constants/config'
 
-export default function serviceModifyCompany (id, data) {
-  return fetch(`${URL_BACKEND}/company/update/${id}`, {
+export default function serviceModifyEmployee (id, data) {
+  return fetch(`${URL_BACKEND}/employee/update/${id}`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'

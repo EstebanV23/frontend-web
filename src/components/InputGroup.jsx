@@ -1,8 +1,10 @@
+import { useState } from "react"
 
 export default function InputGroup ({ label, type, id, name, placeholder, required, initialValue }) {
+  const [value, setValue] = useState(initialValue)
   return (
     <div className='form-floating'>
-      <input type={type} className='form-control' name={name} id={id} placeholder={placeholder} required={required} value={initialValue} />
+      <input type={type} className='form-control' name={name} id={id} placeholder={placeholder} required={required} onChange={(e) => setValue(e.target.value)} value={value} />
       <label htmlFor={id}>{label}</label>
     </div>
   )

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function useGetData (callback) {
+export default function useGetData (callback, condition) {
   const [loading, setLoading] = useState(true)
   const [data, setCompanies] = useState([])
 
@@ -11,6 +11,6 @@ export default function useGetData (callback) {
         setCompanies(data.data)
         setLoading(false)
       })
-  }, [])
+  }, [condition])
   return { data, loading }
 }

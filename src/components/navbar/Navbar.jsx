@@ -17,9 +17,6 @@ export default function Navbar () {
               <li className='nav-item'>
                 <NavLink className='nav-link' to='/employees'>Employees</NavLink>
               </li>
-              <li className='nav-item'>
-                <NavLink className='nav-link' to=''>Pricing</NavLink>
-              </li>
             </ul>
           </div>
         </div>

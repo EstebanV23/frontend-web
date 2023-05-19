@@ -21,9 +21,6 @@ export default function Company () {
           </div>
         </div>
       ))}
-      <GroupOpenModal textButton='Add new company' textSucces='New company'>
-        <h1>Hola</h1>
-      </GroupOpenModal>
     </div>
   )
 }
